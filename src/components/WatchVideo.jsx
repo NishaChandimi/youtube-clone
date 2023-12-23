@@ -7,7 +7,7 @@ import { ReactComponent as Download } from '../assets/download.svg';
 // import { useVideoStore } from '../store';
 
 const WatchVideo = () => {
-
+ console.log("test");
   // const {videos} = useVideoStore();
   const { videoId } = useParams();
   const videoSrc = `https://www.youtube.com/embed/${videoId}`;
