@@ -52,7 +52,6 @@ const fetchRecommendedVideos = (setVideos) => {
 const RecommendedVideos = () => {
 
   const { videos, setVideos } = useVideoStore();
-  // const {fetchRecommendedVideos} = useFunctions();
   const memoizedFetchRecommendedVideos = useCallback(() => {
     fetchRecommendedVideos(setVideos);
   }, [setVideos]);
