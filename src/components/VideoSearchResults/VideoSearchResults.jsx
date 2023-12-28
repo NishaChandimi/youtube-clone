@@ -1,11 +1,12 @@
 import React from 'react'
-import { ReactComponent as Verified } from '../assets/verified-icon.svg';
-import { useVideoStore } from '../store'
+import { ReactComponent as Verified } from '../../assets/verified-icon.svg';
+import { useVideoStore } from '../../store'
 import { Link } from 'react-router-dom';
+import './VideoSearchResults.css';
 
 // Search Results UI
 const VideoSearchResult = (video) => {
-    // console.log("Reached here..!!")
+    console.log("Reached here --> ", video.video.id.videoId);
     return (
         <Link to={`/watch/${video.video.id.videoId}`} className="videos-search-result-container">
             <div className="video-search-result-container">
@@ -34,10 +35,10 @@ const VideoSearchResult = (video) => {
     )
 }
 
-
-const SearchResults = () => {
+const VideoSearchResults = () => {
 
     const { videos } = useVideoStore();
+
     return (
         <div className="videos-search-result-container">
             {
@@ -50,4 +51,4 @@ const SearchResults = () => {
     )
 }
 
-export default SearchResults
+export default VideoSearchResults

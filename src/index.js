@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import VideoPlay from './pages/VideoPlay';
+import SearchResults from './pages/SearchResults';
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     path: "watch/:videoId",
     element: <VideoPlay /> ,
   },
+  {
+    path: "search-results/:searchQuery",
+    element: <SearchResults /> ,
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

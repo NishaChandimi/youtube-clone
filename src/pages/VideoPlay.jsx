@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../components/Header'
-import WatchVideo from '../components/WatchVideo'
-import VideoSuggestions from '../components/VideoSuggestions'
+import Header from '../components/Header/Header'
+import WatchVideo from '../components/WatchVideo/WatchVideo'
+import VideoSuggestions from '../components/VideoSuggestions/VideoSuggestions'
 
 
 const VideoPlay = () => {

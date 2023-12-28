@@ -1,7 +1,8 @@
 import React from 'react'
-import Header from '../components/Header'
-import Sidebar from '../components/Sidebar'
-import Content from '../components/Content'
+import Header from '../components/Header/Header'
+import Sidebar from '../components/Sidebar/Sidebar'
+import ScrollMenu from '../components/ScrollMenu/ScrollMenu'
+import RecommendedVideos from '../components/RecommendedVideos/RecommendedVideos'
 
 const Home = () => {
   return (
@@ -9,7 +10,11 @@ const Home = () => {
       <Header />
       <div className="main">
         <Sidebar />
-        <Content />
+        <div className="content">
+          <ScrollMenu />
+          <RecommendedVideos />
+        </div>
+
       </div>
     </React.Fragment>
 
