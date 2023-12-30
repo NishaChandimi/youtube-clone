@@ -32,6 +32,7 @@
     gap: 10px;
   
     padding-left: 15px ;
+    cursor: pointer;
   }
   
   .sidebar-menu-items:hover{
@@ -44,6 +45,12 @@
     height:20px;
   }
   
+  .home-icon{
+    width: 16px;
+    height: 17.8px;
+    padding-left: 2px;
+  }
+
   .sidebar-menu-item{
     width: 100px;
     height: 35px;
@@ -89,6 +96,7 @@
     gap: 10px;
   
     justify-content: center;
+    padding-right: 10px;
   }
   .text{
     font-size: 20px;
@@ -100,7 +108,7 @@
   }
   .sidebar-menu-subscription{
   
-    width: 90%;
+    width: 100%;
     height: 40px;
   
     border-radius: 10px;
@@ -110,6 +118,8 @@
   
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+
   }
   .sidebar-menu-subscription:hover{
     background-color: #282828;
@@ -119,7 +129,6 @@
     height: 25px;
   
     border-radius: 100%;
-    background-color: pink;
   }
   
   .sidebar-menu-text{

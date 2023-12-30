@@ -1,48 +1,59 @@
 import React from 'react';
 import './Sidebar.css';
 
+import { ReactComponent as Home } from '../../assets/home-icon.svg';
+import { ReactComponent as Shorts } from '../../assets/shorts-icon.svg';
+import { ReactComponent as Subscriptions } from '../../assets/subscriptions-icon.svg';
+import { ReactComponent as Library } from '../../assets/library-icon.svg';
+import { ReactComponent as History } from '../../assets/history-icon.svg';
+import { ReactComponent as YourVideos } from '../../assets/your-videos-icon.svg';
+import { ReactComponent as WatchLater } from '../../assets/watch-later-icon.svg';
+import { ReactComponent as MyPlaylist } from '../../assets/myPlaylist-icon.svg';
+import { ReactComponent as Like } from '../../assets/like-icon.svg';
+
+
 const Sidebar = () => {
   return (
     <div className="sidebar">
             <div className="sidebar-menu-home">
                 <div className="sidebar-menu-items">
-                    <img src="assets/home-icon.svg" alt="Home-icon" className="sidebar-menu-icons" />
+                    <Home className="sidebar-menu-icons home-icon" />
                     <p className="sidebar-menu-item">Home</p>
                     
                 </div>
                 <div className="sidebar-menu-items">
-                    <img src="assets/shorts-icon.svg" alt="shorts-icon" className="sidebar-menu-icons" />
+                    <Shorts className="sidebar-menu-icons" />
                     <p className="sidebar-menu-item">Shorts</p>
                 </div>
                 <div className="sidebar-menu-items">
-                    <img src="assets/subscriptions-icon.svg" alt="Subscription-icon" className="sidebar-menu-icons" />
+                    <Subscriptions className="sidebar-menu-icons" />
                     <p className="sidebar-menu-item">Subscriptions</p>
                 </div>
             </div>
             <div className="horizontal-line"></div>
             <div className="sidebar-menu-options">
                 <div className="sidebar-menu-items">
-                    <img src="assets/library-icon.svg" alt="library-icon" className="sidebar-menu-icons" />
+                    <Library className="sidebar-menu-icons" />
                     <p className="sidebar-menu-item">Library</p>
                 </div>
                 <div className="sidebar-menu-items">
-                    <img src="assets/history-icon.svg" alt="history-icon" className="sidebar-menu-icons" />
+                    <History className="sidebar-menu-icons" />
                     <p className="sidebar-menu-item">History</p>
                 </div>
                 <div className="sidebar-menu-items">
-                    <img src="assets/your-videos-icon.svg" alt="history-icon" className="sidebar-menu-icons" />
+                    <YourVideos className="sidebar-menu-icons" />
                     <p className="sidebar-menu-item">Your Videos</p>
                 </div>
                 <div className="sidebar-menu-items">
-                    <img src="assets/watch-later-icon.svg" alt="history-icon" className="sidebar-menu-icons" />
+                    <WatchLater className="sidebar-menu-icons" />
                     <p className="sidebar-menu-item">Watch Later</p>
                 </div>
                 <div className="sidebar-menu-items">
-                    <img src="assets/myPlaylist-icon.svg" alt="history-icon" className="sidebar-menu-icons" />
+                    <MyPlaylist className="sidebar-menu-icons" />
                     <p className="sidebar-menu-item">My</p>
                 </div>
                 <div className="sidebar-menu-items">
-                    <img src="assets/like-icon.svg" alt="history-icon" className="sidebar-menu-icons" />
+                    <Like className="sidebar-menu-icons" />
                     <p className="sidebar-menu-item">Liked Videos</p>
                 </div>
             </div>
